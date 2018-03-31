@@ -1,0 +1,59 @@
+.heading {
+	font-size: 6em;
+	color: #363636;
+	text-transform: uppercase;
+	display: inline-block;
+	transition: .5s;
+	margin: .5em;
+}
+.heading.layer-shadow {
+	text-shadow: 6px 6px 0 rgba(0, 0, 0, .2), 3px 3px 0 rgba(0, 0, 0, .2), 9px 9px 0 rgba(0, 0, 0, .2);
+}
+.heading.layer-shadow:hover {
+	transform: translateY(5px);
+}
+
+.heading.layer-shadow-reverse:hover{
+	text-shadow: 6px 6px 0 rgba(0, 0, 0, .2), 3px 3px 0 rgba(0, 0, 0, .2), 9px 9px 0 rgba(0, 0, 0, .2);
+	transform: translateY(-5px);
+}
+.heading:hover{
+	text-shadow: none;
+}
+.heading.shadow {
+	text-transform: none;
+	text-shadow: 1px 0px 1px #999, 0px 1px 1px #AAA, 
+  2px 1px 1px #999, 1px 2px 1px #AAA,
+  3px 2px 1px #999, 2px 3px 1px #AAA,
+  4px 3px 1px #999, 3px 4px 1px #AAA,
+  5px 4px 1px #999, 4px 5px 1px #AAA,
+  6px 5px 1px #999, 5px 6px 1px #AAA,
+  7px 6px 1px #999;
+}
+.heading.shadow:hover {
+	text-shadow: none;
+	transform: translateY(5px);
+}
+
+.heading.double-shadow {
+	text-transform: none;
+	text-shadow: 4px 3px 0 #F5F5F5, 9px 8px 0 rgba(0,0,0,0.2);
+}
+.heading.double-shadow:hover {
+	text-shadow: none;
+	transform: translateY(5px);
+}
+
+.heading.perspective {
+	text-shadow:  2px 3px 0 #ECECEC, 5px 6px 0 #A9A9A9;
+	overflow: hidden;
+}
+.heading.perspective.perspective-x {
+	transform: perspective(600px) rotateX(45deg);
+}
+.heading.perspective.perspective-y {
+	transform: perspective(600px) rotateY(-15deg);	
+}
+.heading.perspective:hover {
+	transform: none;
+}
